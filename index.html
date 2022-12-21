@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <title>E-commerce [ Cadastro ]</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link href="assets/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="field">
+                <div class="flex two-columns">
+                    <div>
+                        <label>
+                            <span>CPF</span>
+                        </label>
+
+                        <input type="text" name="document" maxlength="11" autocomplete="off">
+                    </div>
+
+                    <div>
+                        <label>
+                            <span>Telefone</span>
+                        </label>
+
+                        <input type="text" name="phone" maxlength="15" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="field">
+                <label>Título</label>
+
+                <input type="text" name="product-title" maxlength="60" autocomplete="off">
+                <div class="maxlength"><p>60</p></div>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex gap-10">
+                <div class="select-box">
+                    <div class="options color-options">
+                        <input type="text" placeholder="Pesquisar" autocomplete="off" />
+
+                        <div class="color-option" data-code="yellow">
+                            <input type="radio" class="radio" />
+                            <label>Amarelo</label>
+                        </div>
+
+                        <div class="color-option" data-code="blue">
+                            <input type="radio" class="radio" />
+                            <label>Azul</label>
+                        </div>
+
+                        <div class="color-option" data-code="blackBlue">
+                            <input type="radio" class="radio" />
+                            <label>Azul / Preto</label>
+                        </div>
+
+                        <div class="color-option" data-code="white">
+                            <input type="radio" class="radio" />
+                            <label>Branco</label>
+                        </div>
+
+                        <div class="color-option" data-code="grey">
+                            <input type="radio" class="radio" />
+                            <label>Cinza</label>
+                        </div>
+
+                        <div class="color-option" data-code="black">
+                            <input type="radio" class="radio" />
+                            <label>Preto</label>
+                        </div>
+
+                        <div class="color-option" data-code="blackWhite">
+                            <input type="radio" class="radio" />
+                            <label>Preto / Branco</label>
+                        </div>
+
+                        <div class="color-option" data-code="blackRed">
+                            <input type="radio" class="radio" />
+                            <label>Preto / Vermelho</label>
+                        </div>
+
+                        <div class="color-option" data-code="green">
+                            <input type="radio" class="radio" />
+                            <label>Verde</label>
+                        </div>
+
+                        <div class="color-option" data-code="red">
+                            <input type="radio" class="radio" />
+                            <label>Vermelho</label>
+                        </div>
+                    </div>
+
+                    <div class="select-color">
+                        <span class="color-name">Cor</span>
+                        <span class="color-square default-square"></span>
+                    </div>
+                </div>
+
+                <div class="select-box">
+                    <div class="options grids-options">
+                        <div class="grid-option">
+                            <input type="checkbox" class="checkbox" data-grid="1" disabled="">
+                            <label>Cor</label>
+                        </div>
+
+                        <div class="grid-option">
+                            <input type="checkbox" class="checkbox" data-grid="2" disabled="">
+                            <label>Tamanho</label>
+                        </div>
+
+                        <button type="button" class="close-grids hidden">Concluir</button>
+                    </div>
+
+                    <div class="select-grids">Selecione a grade</div>
+                </div>
+
+                <div class="flex button-card active">
+                    <input type="checkbox" name="product-active" class="checkbox checkbox-button-card" disabled="">
+                    <span>Produto ativo</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="field">
+                <div class="four-columns">
+                    <div>
+                        <label>Preço <span class="tag">( de )</span></label>
+
+                        <input type="text" name="product-price" maxlength="9" autocomplete="off">
+                        <p class="currency currency-price">R$</p>
+                    </div>
+
+                    <div>
+                        <label>Em promoção <span class="tag">( por )</span></label>
+
+                        <input type="text" name="product-promotional-price" maxlength="9" placeholder="opcional" autocomplete="off">
+                        <p class="currency currency-promotional-price">R$</p>
+                    </div>
+
+                    <div>
+                        <label>Estoque</label>
+
+                        <input type="text" name="product-stock" maxlength="3" autocomplete="off">
+                    </div>
+
+                    <div>
+                        <label>SKU</label>
+
+                        <input type="text" name="product-sku" maxlength="32" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+
+            <div class="field">
+                <label>Peso <span class="tag">( kg )</span> e dimensões <span class="tag">( cm )</span></label>
+
+                <div class="four-inputs">
+                    <input type="text" name="product-weight" maxlength="6" placeholder="Peso" autocomplete="off">
+                    <input type="text" name="product-height" maxlength="5" placeholder="Altura" autocomplete="off">
+                    <input type="text" name="product-width" maxlength="5" placeholder="Largura" autocomplete="off">
+                    <input type="text" name="product-length" maxlength="5" placeholder="Comprimento" autocomplete="off">
+                </div>
+
+                <div class="info no-border-top-radius">
+                    <p>Os valores devem ser do produto já embalado, pronto para o envio</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="right">
+                <button type="button" class="flex register">Cadastrar</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src="assets/script.js" defer></script>
+</html>
